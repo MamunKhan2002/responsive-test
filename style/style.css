@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1400px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.left-right-container {
+    display: flex;
+    gap: 10px;
+    /* background-color: aqua; */
+}
+
+.left-right-container .left-container {
+    background-color: rgb(228, 78, 78);
+    width: 40%;
+    border-radius: 15px;
+    /* padding: 20px 20px; */
+}
+.left-right-container .left-container ul{
+    list-style-type: none;
+}
+
+.left-right-container .left-container ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.left-right-container .left-container ul li{
+    padding: 10px 10px;
+}
+
+.left-right-container .left-container ul li:hover{
+    background-color: lightslategray;
+}
+
+.left-right-container .left-container * {
+}
+
+.left-right-container .right-container {
+    background-color: rgb(167, 224, 10);
+    width: 60%;
+    border-radius: 15px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.left-right-container .right-container * {
+    
+}
+
+/* --------Simple Responsive Design-------- */
+
+@media screen and (max-width: 576px) {
+    .left-right-container {
+        flex-direction: column;
+    }
+
+    .left-right-container .left-container {
+        width: 90%;
+        margin-inline: auto;
+        height: 40%;
+    }
+    .left-right-container .left-container ul{
+        display: flex;
+        overflow: scroll;
+    }
+
+    .left-right-container .right-container {
+        width: 90%;
+        height: 60%;
+        margin-inline: auto;
+    }
+}

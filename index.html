@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout 2D</title>
+    <style>
+        .container {
+            max-width: 1440px;
+            margin: 50px auto;
+        }
+
+        .item-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .item-container .item img {
+            max-width: 100%;
+        }
+
+        .item-container .item {
+            border: 2px solid tomato;
+            border-radius: 10px;
+        }
+        .item-container .item:hover{
+            box-shadow: 5px 5px 10px #333;
+        }
+
+        .item-container .item .item-content {
+            padding: 0 20px 20px 20px;
+            /* text-align: justify; */
+        }
+
+        .item-container .item .item-content button{
+            padding: 10px 20px;
+            border: 0;
+            border-radius: 5px;
+        }
+        .item-container .item .item-content button:hover{
+            background-color: greenyellow;
+            outline: 0;
+            border: 0;
+        }
+        .item-container .item .item-content button a{
+            text-decoration: none;
+            color: tomato;
+        }
+
+        /* -------Smaller Device--------- */
+        @media screen and (max-width:767px){
+            .item-container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+       
+        @media screen and (min-width:767px) and (max-width:992px){
+            .item-container{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media screen and (min-width:992px) and (max-width:1440px){
+            .item-container{
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- main.container>.item-container>.item*20>img+h1>{Item $}^p>{lorem20}+button>a>{Buy-Now} -->
+    <main class="container">
+        <div class="item-container">
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <p>price: $15000</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <p>price: $15000</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <p>price: $15000</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <p>price: $15000</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <p>price: $15000</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <p>price: $15000</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/car-1.jpg" alt="">
+                <div class="item-content">
+                    <h1>Item 1</h1>
+                    <h3>Price: $15000</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur amet reprehenderit
+                        similique velit laborum suscipit libero voluptatibus voluptatum eaque.</p>
+                    <button><a href="">Buy-Now</a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
